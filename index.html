@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>calci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="">
+        <div class="cal">
+            <h4 align="center" style="color: aliceblue; font-size: 15px;">CASIO</h4>
+                <div class="optpp">
+                        <input class="op" type="text" name="op">
+                </div>
+                <div class="number">
+                    <input type="button" name="AC" value="AC" onclick="op.value=''">
+                    <input type="button" name="C" value="CLR" onclick="op.value=Math.floor(op.value/10)">
+                    <input type="button" name="mod" value="%" onclick="op.value+='%'">
+                    <input class="operator" type="button" name="operator" value="/" onclick="op.value+='/'">
+            </div>
+            <div class="number">
+                    <input type="button" name="number" value="1" onclick="op.value+='1'">
+                    <input type="button" name="number" value="2" onclick="op.value+='2'">
+                    <input type="button" name="number" value="3" onclick="op.value+='3'">
+                    <input class="operator" type="button" name="operator" value="X" onclick="op.value+='*'">
+            </div>
+            <div class="num">
+                    <input type="button" name="number" value="4" onclick="op.value+='4'">
+                    <input type="button" name="number" value="5" onclick="op.value+='5'">
+                    <input type="button" name="number" value="6" onclick="op.value+='6'">
+                    <input class="operator" type="button" name="operator" value="-" onclick="op.value+='-'">
+            </div>
+            <div class="num">
+                    <input type="button" name="number" value="7" onclick="op.value+='7'">
+                    <input type="button" name="number" value="8" onclick="op.value+='8'">
+                    <input type="button" name="number" value="9" onclick="op.value+='9'">
+                    <input class="operator" type="button" name="operator" value="+" onclick="op.value+='+'">
+            </div>
+            <div class="last">
+                <input type="button" name="number" value="0" onclick="op.value+='0'">
+                <input type="button" name="number" value="00" onclick="op.value+='00'">
+                <input type="button" name="operator" value="." onclick="op.value='.'">
+                <input class="operator" class="equal" type="button" name="operator" value="=" onclick="op.value=eval(op.value)">
+        </div>
+    </fieldset>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
